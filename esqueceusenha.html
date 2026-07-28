@@ -6,6 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="assets/imagens/logo.png" >
+    <header>
+        <img src="assets/imagens/logo.png" >
+    </header>
+ 
+    <main>
+        <form  method="get" action="index.html">
+            <p>Criar sua nova senha</p>
+            <p><label for="email">E-mail</label></p>
+            <input type="email" name="email" id="email" placeholder="Digite o E-mail" required>
+            <p><label for="senha">Digite sua nova senha</label></p>
+            <input type="password" name="senha" id="senha" placeholder="Digite a Senha" required minlength=8>
+            <p><label for="senha">Confirme sua nova senha</label></p>
+            <input type="password" name="senha" id="senha" placeholder="Digite a Senha" required minlength=8>
+            <p><button type="submit">Criar</button></p>
+    </main>
+    
 </body>
 </html>
