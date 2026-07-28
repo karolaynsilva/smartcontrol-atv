@@ -6,10 +6,15 @@
     <title>Criar nova Conta</title>
 </head>
 <body>
+    <p>Bem-vindo (a)</p>
+    <p>Que bom ter você aqui!</p>
+    <p>Acesse sua conta para continuar aprendendo, ensinando e eveluindo juntos.</p>
+   
+  
     <img src="assets/imagens/logo.png" >
     <p>Crie sua conta</p>
 
-   <form method="get" action="cadastro.html">
+   <form method="get" action="index.html">
 
     <p><label for="nome">Nome Completo</label></p>
     <input type="nome" name="nome" id="nome" placeholder="Nome" required>
@@ -21,10 +26,23 @@
     <input type="email" name="email_cadastro" id="email_cadastro" placeholder="Cadastrar e-mail" required>
 
     <p><label for="senha_criada">Senha</label></p>
-    <input type="password" name="senha_criada" id="senha_criada" placeholder="Crie sua senha" required>
+    <input type="password" name="senha_criada" id="senha_criada" placeholder="Crie sua senha" required minlength=8>
 
-    <p><button type="submit">Criar </button></p>
-
+    <p><label for="nivel">Nível de Acesso</label><br></p>
+    <select name="nivel" id="nivel" required>
+        <option value="">Selecione um nível</option>
+        <option value="bronze">Bronze</option>
+        <option value="prata">Prata</option>
+        <option value="ouro">Ouro</option>
+    </select>
+    
+    <p>
+        <input type="checkbox" id="termos" name="termos" required>
+        <label for="termos">Aceito os Termos de Uso</label>
+    </p>
+    
+    <p><button type="submit">Criar</button></p>
    </form>
+   <p></p><button>Audio</button>
 </body>
 </html>
