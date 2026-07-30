@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --bg-left: #dbeeff;          
+    --bg-card: #ffffff;          
+    --text-primary: #0d253f;       
+    --text-secondary: #335384;     
+    --text-muted: #64748b;        
+    --border-color: #cbd5e1;     
+    --border-focus: #003366;      
+    --btn-primary-bg: #002b66;    
+    --btn-primary-hover: #001f4d;  
+    --btn-secondary-text: #003366; 
+    --link-color: #4a779d;         
+    --shadow-color: rgba(0, 0, 0, 0.05); 
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--bg-left);
+    color: var(--text-primary);
+}
+
+header {
+    width: 45%;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
