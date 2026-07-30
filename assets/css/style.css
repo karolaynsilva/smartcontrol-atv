@@ -6,27 +6,27 @@
 }
 
 :root {
-    --bg-left: #dbeeff;          
-    --bg-card: #ffffff;          
-    --text-primary: #0d253f;       
-    --text-secondary: #335384;     
-    --text-muted: #64748b;        
-    --border-color: #cbd5e1;     
-    --border-focus: #003366;      
-    --btn-primary-bg: #002b66;    
-    --btn-primary-hover: #001f4d;  
-    --btn-secondary-text: #003366; 
-    --link-color: #4a779d;         
-    --shadow-color: rgba(0, 0, 0, 0.05); 
+    --fundo: #dbeeff;                    
+    --titulo: #0a3c72;       
+    --subtitulo: #335384;     
+    --texto: #64748b;        
+    --borda: #cbd5e1;     
+    --borda2: #003366;      
+    --botao-principal: #002b66;    
+    --botao: #001f4d;  
+    --botao-texto: #003366; 
+    --link: #4a779d;         
+    --sombra: rgba(0, 0, 0, 0.05); 
 }
 
 body {
     display: flex;
     min-height: 100vh;
-    background-color: var(--bg-left);
-    color: var(--text-primary);
+    background-color: var(--fundo);
+    color: var(--titulo);
 }
 
+/*Lado esquerdo*/
 header {
     width: 45%;
     padding: 60px 40px;
@@ -36,3 +36,160 @@ header {
     position: relative;
 }
 
+header p:nth-child(1) {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--titulo);
+    margin-bottom: 8px;
+}
+
+header p:nth-child(2) {
+    font-size: 1.5rem;
+    color: var(--subtitulo);
+    margin-bottom: 30px;
+}
+
+
+header p:nth-child(3) {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--subtitulo);
+    max-width: 300px;
+}
+
+/*Lado direito*/
+main {
+    width: 55%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*logo*/
+main img {
+    max-width: 350px;
+    margin-bottom: 10px;
+}
+
+/*Titulo acesse a conta*/
+main > p:nth-of-type(1) {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--titulo);
+    margin-bottom: 30px;
+}
+
+/*formulario */
+form {
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    color: var(--titulo);
+    font-size: 0.9rem;
+}
+
+form p label {
+    font-weight: 600;
+    color: var(--titulo);
+    display: block;
+    text-align: left;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input[type="email"]:hover,
+form input[type="password"]:hover,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    transform: scale(1.02); 
+}
+
+/*esqueceu a senha*/
+form p a {
+    color: var(--link);
+    font-size: 0.80rem;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/*botão de entrar*/
+form button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--botao-principal);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    
+}
+
+form button[type="submit"]:hover {
+    transform: scale(1.03);  
+}
+
+/*ou*/
+form[action="cadastro.html"] {
+    margin-top: 10px;
+}
+
+/*botao criar nova conta*/
+form[action="cadastro.html"] button[type="submit"] {
+    background-color: transparent;
+    color: var(--botao);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+form[action="cadastro.html"] button[type="submit"]:hover {
+    transform: scale(1.03); 
+}
+
+/*botão de audio*/
+main > p button {
+    background-color: #0099ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 0.70rem;
+    position: absolute;
+    right: 35px;
+    bottom: 35px;
+  
+}
+
+/*rodapé*/
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    font-size: 0.85rem;
+    color: var(--subtitulo);
+}
+
+footer a {
+    color: var(--botao2);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
