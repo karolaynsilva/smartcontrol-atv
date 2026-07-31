@@ -175,7 +175,7 @@ footer {
 }
 
 footer a {
-    color: var(--botao2);
+    color: var(--borda2);
     font-weight: bold;
     text-decoration: none;
 }
