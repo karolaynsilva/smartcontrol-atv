@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --fundo: #dbeeff;                  
+    --fundo2: #002b66;
+    --fundo-menu: #ffffff;
+    --titulo: #4a80db;       
+    --texto: #1e293b;        
+    --sombra: rgba(0, 0, 0, 0.08); 
+    --fundo3: #ffffff;
+}
+
+body {
+    background-color: var(--fundo);
+    min-height: 100vh;
+}
