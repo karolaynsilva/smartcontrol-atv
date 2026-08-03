@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --fundo-pagina: #dbeeff;
+    --fundo-header: #002b66;
+    --fundo-menu-lateral: #ffffff;
+    --fundo-card: #ffffff;
+    --fundo-cabecalho-tabela: #dceaf8;
+    --titulo-principal: #002b66;
+    --texto-escuro: #1e293b;
+    --texto-suave: #64748b;
+    --borda-tabela: #e2e8f0;
+    --sombra-card: rgba(0, 0, 0, 0.06);
+    --azul-botao: #00a0ff;
+}
+
+body {
+    background-color: var(--fundo-pagina);
+    min-height: 100vh;
+    padding-left: 90px;
+}
+
+
