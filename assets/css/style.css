@@ -26,7 +26,6 @@ body {
     color: var(--titulo);
 }
 
-/*Lado esquerdo*/
 header {
     width: 45%;
     padding: 60px 40px;
@@ -57,7 +56,7 @@ header p:nth-child(3) {
     max-width: 300px;
 }
 
-/*Lado direito*/
+
 main {
     width: 55%;
     background-color: #ffffff;
@@ -67,13 +66,13 @@ main {
     justify-content: center;
 }
 
-/*logo*/
+
 main img {
     max-width: 350px;
     margin-bottom: 10px;
 }
 
-/*Titulo acesse a conta*/
+
 main > p:nth-of-type(1) {
     font-size: 1.6rem;
     font-weight: 700;
@@ -81,7 +80,7 @@ main > p:nth-of-type(1) {
     margin-bottom: 30px;
 }
 
-/*formulario */
+
 form {
     width: 100%;
     max-width: 380px;
@@ -107,13 +106,13 @@ form input[type="email"],form input[type="password"] {
 }
 
 
-/*esqueceu a senha*/
+
 form p a {
     color: var(--link);
-    font-size: 0.80rem;
+    font-size: 0.70rem;
 }
 
-/*botão de entrar*/
+
 form button[type="submit"] {
     width: 100%;
     padding: 14px;
@@ -131,12 +130,12 @@ form button[type="submit"]:hover {
     transform: scale(1.03);  
 }
 
-/*ou*/
+
 form[action="cadastro.html"] {
     margin-top: 10px;
 }
 
-/*botao criar nova conta*/
+
 form[action="cadastro.html"] button[type="submit"] {
     background-color: transparent;
     color: var(--botao);
@@ -151,7 +150,7 @@ form[action="cadastro.html"] button[type="submit"]:hover {
     transform: scale(1.03); 
 }
 
-/*botão de audio*/
+
 main > p button {
     background-color: #0099ff;
     color: #ffffff;
@@ -166,7 +165,7 @@ main > p button {
   
 }
 
-/*rodapé*/
+
 footer {
     position: absolute;
     bottom: 20px;
