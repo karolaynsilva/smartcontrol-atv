@@ -19,6 +19,17 @@ body {
     min-height: 100vh;
 }
 
+.btn-toggle-menu {
+    display: none;
+    background: #002b66;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
 header {
     background-color: var(--fundo2);
     height: 75px;
