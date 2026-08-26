@@ -262,7 +262,6 @@ footer {
 footer iframe {
     border-radius: 12px;
 }
-
 /*Modo Escuro*/
 body.dark-theme {
     --fundo: #0f172a;
