@@ -151,21 +151,6 @@ form[action="cadastro.html"] button[type="submit"]:hover {
 }
 
 
-main > p button {
-    background-color: #0099ff;
-    color: #ffffff;
-    border: none;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    font-size: 0.70rem;
-    position: absolute;
-    right: 35px;
-    bottom: 35px;
-  
-}
-
-
 footer {
     position: absolute;
     bottom: 20px;
