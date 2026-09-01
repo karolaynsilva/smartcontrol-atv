@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="assets/css/config.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <img src="assets/imagens/logo.png" alt="Smart Control">
+    </aside>
+
+    <div class="content-wrapper">
+
+        <header class="topbar">
+            <h1>Configurações Do Sistema</h1>
+            <form method="get" action="dashboard.html">
+                <button type="submit" class="btn-logout">Voltar</button>
+            </form>
+        </header>
+
+        <main>
+            <div class="grid">
+
+                <section class="card">
+                    <h2> Idioma e Tradução</h2>
+                    <select>
+                        <option>Selecionar linguas</option>
+                        <option>Português</option>
+                        <option>Inglês</option>
+                        <option>Espanhol</option>
+                    </select>
+                    <button type="button" class="btn-action">Tradução</button>
+                </section>
+
+                <section class="card">
+                    <h2> Conta e Perfil</h2>
+                    <button type="button" class="btn-action">Mudar de conta</button>
+                    <button type="button" class="btn-action">Gerenciar Perfil</button>
+                </section>
+
+                <section class="card">
+                    <h2>🛡 Privacidade e Segurança</h2>
+                    <div class="toggle-row">
+                        <span>Serviços de locação</span>
+                        <input type="checkbox" class="toggle" checked>
+                    </div>
+                    <div class="toggle-row">
+                        <span>Compartilhar os dados</span>
+                        <input type="checkbox" class="toggle">
+                    </div>
+                    <p class="link">Esqueceu sua senha</p>
+                    <button type="button" class="btn-action">Privacidade</button>
+                </section>
+
+                <section class="card">
+                    <h2>Acessibilidade <small>(Addicional)</small></h2>
+                    <div class="toggle-row">
+                        <span>Alto Contraste</span>
+                        <input type="checkbox" class="toggle" checked>
+                    </div>
+                    <div class="toggle-row">
+                        <span>Tamanho da Fonte</span>
+                        <input type="checkbox" class="toggle" checked>
+                    </div>
+                    <div class="toggle-row">
+                        <span>Controle de Voz</span>
+                        <input type="checkbox" class="toggle">
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>

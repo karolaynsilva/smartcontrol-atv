@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #dce9f9;
+}
+
+
+.sidebar {
+    width: 90px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    flex-shrink: 0;
+}
+
+.sidebar img {
+    width: 45px;
+}
+
+
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.topbar {
+    background-color: #14225a;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.btn-voltar {
+    padding: 10px 24px;
+    background-color: #ffffff;
+    color: #1a2a5e;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #eef3fb;
+}
+
+main {
+    padding: 30px 40px;
+}
+
+main h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a2a5e;
+    margin-bottom: 25px;
+}
+
+main img {
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 14px;
+    padding: 15px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    display: block;
+}
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        order: -1;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .sidebar img {
+        width: 36px;
+    }
+
+    .content-wrapper {
+        width: 100%;
+    }
+
+    .topbar {
+        padding: 12px 20px;
+    }
+
+    .btn-voltar {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    main h1 {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    main img {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
