@@ -191,3 +191,66 @@ main {
 .toggle:checked::before {
     left: 22px;
 }
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        order: -1;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        gap: 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .sidebar img {
+        width: 32px;
+        margin-bottom: 0;
+    }
+
+    .icon-btn {
+        font-size: 18px;
+    }
+
+    .content-wrapper {
+        width: 100%;
+    }
+
+    .topbar {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 20px 20px 5px;
+    }
+
+    .topbar h1 {
+        font-size: 20px;
+    }
+
+    .btn-logout {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+
+    main {
+        padding: 15px 20px 30px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        max-width: 100%;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .card h2 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+}
