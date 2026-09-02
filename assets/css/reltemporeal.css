@@ -11,7 +11,6 @@ body {
     background-color: #dce9f9;
 }
 
-
 .sidebar {
     width: 90px;
     background-color: #ffffff;
@@ -19,6 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
+    gap: 25px;
     flex-shrink: 0;
 }
 
@@ -26,13 +26,11 @@ body {
     width: 45px;
 }
 
-
 .content-wrapper {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
-
 
 .topbar {
     background-color: #14225a;
@@ -60,24 +58,123 @@ body {
 
 main {
     padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 main h1 {
     font-size: 26px;
     font-weight: 700;
     color: #1a2a5e;
-    margin-bottom: 25px;
 }
 
-main img {
+.card {
     background-color: #ffffff;
-    max-width: 600px;
-    width: 100%;
     border-radius: 14px;
-    padding: 15px;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a2a5e;
+    margin-bottom: 15px;
+}
+
+.linha-topo {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.card-online {
+    flex: 1.4;
+    min-width: 0;
+    position: relative;
+}
+
+.card-online .grafico-svg {
+    width: 100%;
+    height: auto;
     display: block;
 }
+
+.valor-label-pequeno {
+    font-size: 13px;
+    font-weight: 700;
+    fill: #1a2a5e;
+    text-anchor: middle;
+}
+
+.bolha-valor {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    background-color: #1a2a5e;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.coluna-lateral {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 0;
+}
+
+.card-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-titulo {
+    font-size: 13px;
+    font-weight: 600;
+    color: #7a828e;
+    margin-bottom: 8px;
+}
+
+.info-valor {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2a5e;
+}
+
+.card-barras {
+    width: 100%;
+    max-width: 900px;
+}
+
+.card-barras .grafico-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.eixo-label,
+.eixo-label-x {
+    font-size: 11px;
+    fill: #7a828e;
+}
+
+.valor-label {
+    font-size: 13px;
+    font-weight: 700;
+    fill: #1a2a5e;
+    text-anchor: middle;
+}
+
+/* ===== RESPONSIVO - CELULAR ===== */
 @media (max-width: 768px) {
     body {
         flex-direction: column;
@@ -87,9 +184,10 @@ main img {
         order: -1;
         width: 100%;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 12px 20px;
+        gap: 0;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
 
@@ -112,15 +210,40 @@ main img {
 
     main {
         padding: 20px;
+        gap: 15px;
     }
 
     main h1 {
         font-size: 20px;
-        margin-bottom: 18px;
     }
 
-    main img {
+    .linha-topo {
+        flex-direction: column;
         max-width: 100%;
-        padding: 10px;
+    }
+
+    .card-online,
+    .card-barras {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 14px;
+    }
+
+    .info-valor {
+        font-size: 20px;
+    }
+
+    .bolha-valor {
+        font-size: 12px;
+        padding: 3px 10px;
+        top: 6px;
+        right: 15px;
     }
 }

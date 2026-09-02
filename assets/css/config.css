@@ -35,7 +35,6 @@ body {
     cursor: pointer;
 }
 
-/* Área de conteúdo */
 .content-wrapper {
     flex: 1;
     display: flex;
