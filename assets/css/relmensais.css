@@ -69,6 +69,10 @@ body {
 
 main {
     padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 main h1 {
@@ -119,6 +123,158 @@ tbody td:first-child {
     font-weight: 600;
     color: #1a2a5e;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-grafico {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+}
+
+.grafico-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.grafico-header h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a2a5e;
+}
+
+.legenda {
+    display: flex;
+    gap: 15px;
+}
+
+.legenda-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #333;
+}
+
+.bolinha {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.bolinha-2024 {
+    background-color: #0d1c4a;
+}
+
+.bolinha-2023 {
+    background-color: #7ab8e8;
+}
+
+.grafico-svg {
+    width: 100%;
+    height: auto;
+}
+
+.eixo-label,
+.eixo-label-x {
+    font-size: 11px;
+    fill: #7a828e;
+}
+
+.valor-label {
+    font-size: 12px;
+    font-weight: 700;
+    fill: #1a2a5e;
+    text-anchor: middle;
+}
+
+.grid-indicadores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+}
+
+.card-indicador {
+    display: block;
+    width: 100%;
+}
+
+.indicador-titulo {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a2a5e;
+    margin-bottom: 15px;
+}
+
+.linha-indicador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.indicador-valor {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a2a5e;
+}
+
+.anel {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.anel-conclusoes {
+    background: conic-gradient(#0d1c4a 0deg 220deg, #eef1f6 220deg 360deg);
+    margin-left: auto;
+}
+
+.anel-conclusoes::before {
+    content: "";
+    width: 42px;
+    height: 42px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: block;
+}
+
+.anel-engajamento {
+    background: conic-gradient(#0d1c4a calc(var(--porcentagem) * 3.6deg), #eef1f6 0deg);
+    margin: 0 auto;
+    position: relative;
+}
+
+.anel-engajamento::before {
+    content: "";
+    width: 42px;
+    height: 42px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+}
+
+.anel-texto {
+    position: relative;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a2a5e;
+    z-index: 1;
+}
+
 @media (max-width: 768px) {
     body {
         flex-direction: column;
