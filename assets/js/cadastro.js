@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const nivel = document.getElementById('nivel');
     const termos = document.getElementById('termos');
     const btnCriar = document.getElementById('btn-criar');
-
     const erroNome = document.getElementById('erro-nome');
     const erroData = document.getElementById('erro-data');
     const erroEmail = document.getElementById('erro-email');
@@ -168,15 +167,12 @@ document.addEventListener('DOMContentLoaded', function () {
         btnCriar.disabled = !(nomeValido && dataValida && emailValido && senhaValida && nivelValido && termosValidos);
     }
 
-    // Validação em tempo real
     nome.addEventListener('input', function () { validarNome(); atualizarBotao(); });
     data.addEventListener('input', function () { validarData(); atualizarBotao(); });
     email.addEventListener('input', function () { validarEmail(); atualizarBotao(); });
     senha.addEventListener('input', function () { validarSenha(); atualizarBotao(); });
     nivel.addEventListener('change', function () { validarNivel(); atualizarBotao(); });
     termos.addEventListener('change', function () { validarTermos(); atualizarBotao(); });
-
-    // Reforço ao sair do campo
     nome.addEventListener('blur', validarNome);
     data.addEventListener('blur', validarData);
     email.addEventListener('blur', validarEmail);
