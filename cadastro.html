@@ -7,7 +7,7 @@
     <title>Criar nova Conta</title>
 </head>
 <body>
-    
+
     <header>
         <p>Bem-vindo (a)</p>
         <p>Que bom ter você aqui!</p>
@@ -15,23 +15,27 @@
     </header>
 
     <main>
-        <img src="assets/imagens/logo.png" >
+        <img src="assets/imagens/logo.png">
         <p>Crie sua conta</p>
-    
-       <form method="get" action="index.html">
-    
+
+       <form method="get" action="index.html" id="form-cadastro" novalidate>
+
         <p><label for="nome">Nome Completo</label></p>
-        <input type="nome" name="nome" id="nome" placeholder="Nome" required>
-    
+        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+        <span class="erro" id="erro-nome"></span>
+
         <p><label for="data">Data de Nascimento</label></p>
-        <input type="date" name="data" id="data" placeholder="DD/MM/AAAA" required>
-    
+        <input type="date" name="data" id="data" required>
+        <span class="erro" id="erro-data"></span>
+
         <p><label for="email_cadastro">E-mail</label></p>
         <input type="email" name="email_cadastro" id="email_cadastro" placeholder="Cadastrar e-mail" required>
-    
+        <span class="erro" id="erro-email"></span>
+
         <p><label for="senha_criada">Senha</label></p>
-        <input type="password" name="senha_criada" id="senha_criada" placeholder="Crie sua senha" required minlength=8>
-    
+        <input type="password" name="senha_criada" id="senha_criada" placeholder="Crie sua senha" required minlength="8">
+        <span class="erro" id="erro-senha"></span>
+
         <p><label for="nivel">Nível de Acesso</label><br></p>
         <select name="nivel" id="nivel" required>
             <option value="">Selecione um nível</option>
@@ -39,18 +43,20 @@
             <option value="prata">Prata</option>
             <option value="ouro">Ouro</option>
         </select>
-        
+        <span class="erro" id="erro-nivel"></span>
+
         <p>
             <input type="checkbox" id="termos" name="termos" required>
             <label for="termos">Aceito os Termos de Uso</label>
         </p>
-        
-        <p><button type="submit">Criar</button></p>
+        <span class="erro" id="erro-termos"></span>
+
+        <p><button type="submit" id="btn-criar">Criar</button></p>
        </form>
 
     </main>
   
-    
+    <script src="assets/js/cadastro.js"></script>
 
 </body>
 </html>

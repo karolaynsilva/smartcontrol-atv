@@ -169,6 +169,32 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.erro {
+    display: block;
+    text-align: left;
+    font-size: 0.75rem;
+    color: #c0392b;
+    margin-top: -10px;
+    margin-bottom: 12px;
+    min-height: 14px;
+}
+
+form input.invalido {
+    border-color: #c0392b;
+    background-color: #fdf2f2;
+}
+
+form input.valido {
+    border-color: #2e9e5b;
+    background-color: #f4fdf7;
+}
+
+form button[type="submit"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none ;
+}
+
 @media (max-width: 768px) {
     body {
         flex-direction: column;

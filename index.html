@@ -12,18 +12,22 @@
     <p>Que bom ter você aqui!</p>
     <p>Acesse sua conta para continuar aprendendo, ensinando e evoluindo juntos.</p>
   </header>
-    
+
     <main>
-      <img src="assets/imagens/logo.png" alt="" >
+      <img src="assets/imagens/logo.png" alt="">
       <p>Acesse sua conta</p>
 
-      <form method="get" action="dashboard.html">
+      <form method="get" action="dashboard.html" id="form-login" novalidate>
         <p><label for="email">E-mail</label></p>
         <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+        <span class="erro" id="erro-email"></span>
+
         <p><label for="senha">Senha</label></p>
-        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required minlength=8>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required minlength="8">
+        <span class="erro" id="erro-senha"></span>
+
         <p><a href="esqueceusenha.html">Esqueceu a senha</a></p>
-        <p><button type="submit">Entrar </button></p>
+        <p><button type="submit" id="btn-entrar">Entrar</button></p>
         ou
       </form>
 
@@ -35,7 +39,7 @@
       <p>Este ambiente é acessivel para todos. Se precisar de ajuda, <a href="#ajuda">clique aqui</a></p>
     </footer>
 
-
+ <script src="assets/js/index.js"></script>
 </body>
 </html>
 
