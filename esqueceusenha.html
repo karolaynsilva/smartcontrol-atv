@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/esqueceusenha.css">
-    <title>Document</title>
+    <title>Esqueceu Senha</title>
 </head>
 <body>
     <main>
         <header>
-        <img src="assets/imagens/logo.png" ></header>
-        <form  method="get" action="index.html">
+            <img src="assets/imagens/logo.png">
+        </header>
+
+        <form method="get" action="index.html" id="form-senha" novalidate>
             <p>Criar sua nova senha</p>
+
             <p><label for="email">E-mail</label></p>
             <input type="email" name="email" id="email" placeholder="Digite o E-mail" required>
+            <span class="erro" id="erro-email"></span>
+
             <p><label for="senha">Digite sua nova senha</label></p>
-            <input type="password" name="senha" id="senha" placeholder="Digite a Senha" required minlength=8>
-            <p><label for="senha">Confirme sua nova senha</label></p>
-            <input type="password" name="senha" id="senha" placeholder="Digite a Senha" required minlength=8>
-            <p><button type="submit">Criar</button></p>
+            <input type="password" name="senha" id="senha" placeholder="Digite a Senha" required minlength="8">
+            <span class="erro" id="erro-senha"></span>
+
+            <p><label for="confirmar_senha">Confirme sua nova senha</label></p>
+            <input type="password" name="confirmar_senha" id="confirmar_senha" placeholder="Digite a Senha" required minlength="8">
+            <span class="erro" id="erro-confirmar"></span>
+
+            <p><button type="submit" id="btn-criar">Criar</button></p>
+        </form>
     </main>
 
+    <script src="assets/js/esqueceusenha.js"></script>
 </body>
 </html>
