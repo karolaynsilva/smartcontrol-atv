@@ -15,6 +15,7 @@
     <div class="content-wrapper">
 
         <header class="topbar">
+            <button type="button" class="btn-modo-escuro" id="btn-modo-escuro">Modo Escuro</button>
             <a href="dashboard.html"><button type="button" class="btn-voltar">Voltar</button></a>
         </header>
 
@@ -75,60 +76,59 @@
                 </table>
             </div>
 
-        <div class="card card-grafico">
-    <div class="grafico-header">
-        <h2>Acessos: Comparativo Mensal (Este Ano vs Ano Anterior)</h2>
-        <div class="legenda">
-            <span class="legenda-item"><i class="bolinha bolinha-2024"></i>2024</span>
-            <span class="legenda-item"><i class="bolinha bolinha-2023"></i>2023</span>
-        </div>
+            <div class="card card-grafico">
+                <div class="grafico-header">
+                    <h2>Acessos: Comparativo Mensal (Este Ano vs Ano Anterior)</h2>
+                    <div class="legenda">
+                        <span class="legenda-item"><i class="bolinha bolinha-2024"></i>2024</span>
+                        <span class="legenda-item"><i class="bolinha bolinha-2023"></i>2023</span>
+                    </div>
+                </div>
+
+                <svg viewBox="0 0 600 260" class="grafico-svg" preserveAspectRatio="xMidYMid meet">
+
+                    <line x1="55" y1="30"  x2="560" y2="30"  stroke="#eef1f6" stroke-width="1"/>
+                    <line x1="55" y1="90"  x2="560" y2="90"  stroke="#eef1f6" stroke-width="1"/>
+                    <line x1="55" y1="150" x2="560" y2="150" stroke="#eef1f6" stroke-width="1"/>
+                    <line x1="55" y1="210" x2="560" y2="210" stroke="#e5e9f0" stroke-width="1"/>
+
+                    <text x="10" y="34"  class="eixo-label">600</text>
+                    <text x="10" y="94"  class="eixo-label">400</text>
+                    <text x="10" y="154" class="eixo-label">200</text>
+                    <text x="10" y="214" class="eixo-label">0</text>
+
+                    <text x="70"  y="235" class="eixo-label-x">jan</text>
+                    <text x="160" y="235" class="eixo-label-x">fev</text>
+                    <text x="250" y="235" class="eixo-label-x">mar</text>
+                    <text x="340" y="235" class="eixo-label-x">abr</text>
+                    <text x="430" y="235" class="eixo-label-x">mai</text>
+                    <text x="520" y="235" class="eixo-label-x">jun</text>
+
+                    <polyline points="70,174 160,174 250,90 340,120 430,90 520,174"
+                              fill="none" stroke="#7ab8e8" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+                    <circle cx="70"  cy="174" r="4" fill="#7ab8e8"/>
+                    <circle cx="160" cy="174" r="4" fill="#7ab8e8"/>
+                    <circle cx="250" cy="90"  r="4" fill="#7ab8e8"/>
+                    <circle cx="340" cy="120" r="4" fill="#7ab8e8"/>
+                    <circle cx="430" cy="90"  r="4" fill="#7ab8e8"/>
+                    <circle cx="520" cy="174" r="4" fill="#7ab8e8"/>
+
+                    <polyline points="70,120 160,45 250,30 340,81 430,84 520,30"
+                              fill="none" stroke="#0d1c4a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+                    <circle cx="70"  cy="120" r="4" fill="#0d1c4a"/>
+                    <circle cx="160" cy="45"  r="4" fill="#0d1c4a"/>
+                    <circle cx="250" cy="30"  r="4" fill="#0d1c4a"/>
+                    <circle cx="340" cy="81"  r="4" fill="#0d1c4a"/>
+                    <circle cx="430" cy="84"  r="4" fill="#0d1c4a"/>
+                    <circle cx="520" cy="30"  r="4" fill="#0d1c4a"/>
+
+                </svg>
+            </div>
+        </main>
+
     </div>
 
-    <svg viewBox="0 0 600 260" class="grafico-svg" preserveAspectRatio="xMidYMid meet">
-  
-        <line x1="" y1="30"  x2="560" y2="30"  stroke="#eef1f6" stroke-width="1"/>
-        <line x1="" y1="90"  x2="560" y2="90"  stroke="#eef1f6" stroke-width="1"/>
-        <line x1="" y1="150" x2="560" y2="150" stroke="#eef1f6" stroke-width="1"/>
-        <line x1="" y1="210" x2="560" y2="210" stroke="#e5e9f0" stroke-width="1"/>
-
-
-        <text x="" y="34"  class="eixo-label">600</text>
-        <text x="" y="94"  class="eixo-label">400</text>
-        <text x="" y="154" class="eixo-label">200</text>
-        <text x="" y="214" class="eixo-label">0</text>
-
-
-        <text x="70"  y="235" class="eixo-label-x">jan</text>
-        <text x="160" y="235" class="eixo-label-x">fev</text>
-        <text x="250" y="235" class="eixo-label-x">mar</text>
-        <text x="340" y="235" class="eixo-label-x">abr</text>
-        <text x="430" y="235" class="eixo-label-x">mai</text>
-        <text x="520" y="235" class="eixo-label-x">jun</text>
-
-        <polyline points="70,174 160,174 250,90 340,120 430,90 520,174"
-        fill="none" stroke="#7ab8e8" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-        <circle cx="70"  cy="174" r="4" fill="#7ab8e8"/>
-        <circle cx="160" cy="174" r="4" fill="#7ab8e8"/>
-        <circle cx="250" cy="90"  r="4" fill="#7ab8e8"/>
-        <circle cx="340" cy="120" r="4" fill="#7ab8e8"/>
-        <circle cx="430" cy="90"  r="4" fill="#7ab8e8"/>
-        <circle cx="520" cy="174" r="4" fill="#7ab8e8"/>
-
-    
-        <polyline points="70,120 160,45 250,30 340,81 430,84 520,30"
-        fill="none" stroke="#0d1c4a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-        <circle cx="70"  cy="120" r="4" fill="#0d1c4a"/>
-        <circle cx="160" cy="45"  r="4" fill="#0d1c4a"/>
-        <circle cx="250" cy="30"  r="4" fill="#0d1c4a"/>
-        <circle cx="340" cy="81"  r="4" fill="#0d1c4a"/>
-        <circle cx="430" cy="84"  r="4" fill="#0d1c4a"/>
-        <circle cx="520" cy="30"  r="4" fill="#0d1c4a"/>
-
-    </svg>
-</div>
-        </main>
-      
-
+    <script src="assets/js/relmensais.js"></script>
 
 </body>
 </html>

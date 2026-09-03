@@ -64,7 +64,7 @@ input[type="password"] {
     background-color: #fafbfc;
     outline: none;
     color: #333;
-    transition: border-color 0.2s ease;
+    transition:  0.2s ease;
 }
 
 input[type="text"]:focus,
@@ -114,7 +114,7 @@ button[type="submit"] {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition:  0.2s ease;
 }
 
 button[type="submit"]:hover {

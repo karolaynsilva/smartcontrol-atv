@@ -9,8 +9,8 @@ body {
     display: flex;
     min-height: 100vh;
     background-color: #dce9f9;
+    transition:  0.3s ease;
 }
-
 
 .sidebar {
     width: 90px;
@@ -21,6 +21,7 @@ body {
     padding: 20px 0;
     gap: 25px;
     flex-shrink: 0;
+    transition:  0.3s ease;
 }
 
 .sidebar img {
@@ -35,20 +36,34 @@ body {
     cursor: pointer;
 }
 
-
 .content-wrapper {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-
 .topbar {
     background-color: #14225a;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+}
+
+.btn-modo-escuro {
+    padding: 8px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:  0.2s ease;
+}
+
+.btn-modo-escuro:hover {
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .btn-voltar {
@@ -88,6 +103,7 @@ main h1 {
     border-radius: 14px;
     padding: 20px;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+    transition:  0.3s ease;
 }
 
 table {
@@ -122,11 +138,6 @@ tbody td {
 tbody td:first-child {
     font-weight: 600;
     color: #1a2a5e;
-}
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .card-grafico {
@@ -196,6 +207,45 @@ main {
     text-anchor: middle;
 }
 
+body.dark-theme {
+    background-color: #0f1729;
+}
+
+body.dark-theme .sidebar {
+    background-color: #1a2438;
+}
+
+body.dark-theme .card {
+    background-color: #1a2438;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme main h1,
+body.dark-theme caption,
+body.dark-theme thead th,
+body.dark-theme tbody td:first-child,
+body.dark-theme .grafico-header h2 {
+    color: #e8ecf5;
+}
+
+body.dark-theme tbody td {
+    color: #c5cbe0;
+    border-top-color: #2a3550;
+}
+
+body.dark-theme .legenda-item {
+    color: #c5cbe0;
+}
+
+body.dark-theme .btn-voltar {
+    background-color: #e8ecf5;
+    color: #14225a;
+}
+
+body.dark-theme .btn-voltar:hover {
+    background-color: #d5dbea;
+}
+
 @media (max-width: 768px) {
     body {
         flex-direction: column;
@@ -225,11 +275,21 @@ main {
     }
 
     .topbar {
+        flex-wrap: wrap;
+        gap: 10px;
         padding: 12px 20px;
-        justify-content: flex-end;
+        justify-content: center;
+    }
+
+    .btn-modo-escuro {
+        order: 2;
+        padding: 7px 16px;
+        font-size: 12px;
     }
 
     .btn-voltar {
+        order: 1;
+        width: 100%;
         padding: 8px 18px;
         font-size: 13px;
     }
